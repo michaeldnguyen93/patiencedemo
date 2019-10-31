@@ -24,7 +24,12 @@ const IndexPage = () => (
       </label>
     </form>
     <Link to="/page-2/">
-      <button style={{marginRight:30}}>
+      <button style={{
+          marginRight:30, 
+          background:"#415370",
+          color:"white",
+          width:"80px"
+        }}>
         Log On
       </button>
     </Link>
