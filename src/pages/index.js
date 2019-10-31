@@ -7,14 +7,44 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Login" />
+    <h2>Patience AI Login</h2>
+    <form>
+      <label style={{fontSize:14}}>
+        Username {"\n"}
+        <br />
+        <input type="text" name="username"></input>
+      </label>
+      <br />
+      <br />
+      <label style={{fontSize:14}}>
+        Password
+        <br />
+        <input type="password" name="password"></input>
+      </label>
+    </form>
+    <Link to="/page-2/">
+      <button style={{marginRight:30}}>
+        Log On
+      </button>
+    </Link>
+    <label style={{fontSize:14}}>
+      <input type="checkbox" name="keepLoggedIn" style={{marginRight:10}}>
+      </input>
+      Keep me logged in
+    </label>
+    <br />
+    <br />
+    <br />
+    <br />
+    <Link to="/page-2" style={{fontSize:14}}>
+      Forgot Password?
+    </Link>
+    {' | '}
+    <Link to="/page-2" style={{fontSize:14}}>
+      Register Account
+    </Link>
+    {/*<Link to="/page-2/">Go to page 2</Link>*/}
   </Layout>
 )
 
