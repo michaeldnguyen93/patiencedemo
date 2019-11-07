@@ -8,7 +8,7 @@ const SecondPage = () => (
   <Layout>
     <SEO title="User Dashboard" />
     <div style={{backgroundColor:"grey"}}>
-      <h2>Upload Files</h2>
+      <h2>Upload Files!</h2>
     </div>
     <p>Select files to upload here.</p>
     <div style={{backgroundColor:"grey"}}>
