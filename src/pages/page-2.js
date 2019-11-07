@@ -22,7 +22,7 @@ const SecondPage = () => (
         <section>
           <div {...getRootProps()}>
           <input {...getInputProps()} />
-          <p>Drag & drop some files here, or click to select files.</p>
+          <h5>Drag & drop some files here, or click to select files.</h5>
           </div>
         </section>
       )}
@@ -40,7 +40,7 @@ const SecondPage = () => (
     <div style={{backgroundColor:"grey"}}>
       <h2>Download Annotations</h2>
     </div>
-    <button type="submit">Download</button>
+    <button type="submit"><h6>Download</h6></button>
 
     <p></p>
 
