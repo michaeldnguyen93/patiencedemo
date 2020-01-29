@@ -13,4 +13,3 @@ phases:
         post-build:
                 commands:
                         -echo post-build
-artifacts:
