@@ -4,12 +4,12 @@ phases:
         install:
                 runtime-versions:
                         nodejs: 10
-        pre-build:
+        pre_build:
                 commands:
                         - echo pre-build
         build:
                 commands:
                         -echo build
-        post-build:
+        post_build:
                 commands:
                         -echo post-build
