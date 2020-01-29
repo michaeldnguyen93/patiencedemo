@@ -5,7 +5,7 @@ phases:
                 runtime-versions:
                         nodejs: 10
                 commands:
-                        - toucn .npmignore
+                        - touch .npmignore
                         - npm install -g gatsby
         pre_build:
                 commands:
