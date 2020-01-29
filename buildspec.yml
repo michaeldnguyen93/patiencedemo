@@ -4,12 +4,23 @@ phases:
         install:
                 runtime-versions:
                         nodejs: 10
+                commands:
+                        - toucn .npmignore
+                        - npm install -g gatsby
         pre_build:
                 commands:
                         - echo pre-build
+                        - npm install
         build:
                 commands:
                         - echo build
+                        - npm run build
         post_build:
                 commands:
                         - echo post-build
+                        - aws s3 sync public/ s3://<ENTER YOUR BUCKET NAME> --delete --acl public-read
+artifacts:
+        base-directory: public
+        files:
+                - '**/*'
+        discard-paths: yes
