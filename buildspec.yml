@@ -10,7 +10,7 @@ phases:
         pre_build:
                 commands:
                         - echo pre-build
-                        - 'npm ci --production'
+                        - 'npm install'
         build:
                 commands:
                         - echo build
