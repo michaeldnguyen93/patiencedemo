@@ -7,11 +7,9 @@ phases:
                 commands:
                         - touch .npmignore
                         - npm install -g gatsby
-                        - npm install imagemin-pngquant@5.0.1 --save
         pre_build:
                 commands:
                         - echo pre-build
-                        - 'npm install'
                         - 'npm ci --production'
         build:
                 commands:
