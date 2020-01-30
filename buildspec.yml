@@ -14,11 +14,11 @@ phases:
         build:
                 commands:
                         - echo build
-                        - 'npm run-script build'
+                        - 'npm run build'
         post_build:
                 commands:
                         - echo post-build
-                        - 'npm run-script deploy'
+                        - 'npm run deploy'
                         - aws s3 sync public/ s3://demo.meditateai.com --delete --acl public-read
 artifacts:
         base-directory: public
