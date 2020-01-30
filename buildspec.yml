@@ -3,24 +3,29 @@ version: 0.2
 phases:
         install:
                 runtime-versions:
-                        nodejs: 10
+                        nodejs: 12
                 commands:
                         - touch .npmignore
                         - npm install -g gatsby
         pre_build:
                 commands:
                         - echo pre-build
-                        - npm install
+                        - 'npm ci --production'
         build:
                 commands:
                         - echo build
-                        - npm run build
+                        - 'npm run-script build'
         post_build:
                 commands:
                         - echo post-build
-                        - aws s3 sync public/ s3://<ENTER YOUR BUCKET NAME> --delete --acl public-read
+                        - 'npm run-script deploy'
+                        - aws s3 sync public/ s3://demo.meditateai.com --delete --acl public-read
 artifacts:
         base-directory: public
         files:
                 - '**/*'
-        discard-paths: yes
+        discard-paths: no
+cache:
+        paths:
+                - '.cache/*'
+                - 'public/*'
