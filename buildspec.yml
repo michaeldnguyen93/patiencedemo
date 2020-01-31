@@ -14,11 +14,11 @@ phases:
         build:
                 commands:
                         - echo build
-                        - 'npm run build'
+                        - 'npm run-script build'
         post_build:
                 commands:
                         - echo post-build
-                        - 'npm run deploy'
+                        - 'npm run-script deploy'
 artifacts:
         base-directory: public
         files:
