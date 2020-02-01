@@ -49,7 +49,6 @@ const IndexPage = () => (
     <Link to="/dashboard" style={{fontSize:14}}>
       Register Account
     </Link>
-    {/*<Link to="/page-2/">Go to page 2</Link>*/}
   </Layout>
 )
 
