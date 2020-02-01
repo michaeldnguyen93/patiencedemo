@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
-      <Header siteTitle='Patience AI' />
+      <Header siteTitle='Meditate AI' />
       <div
         style={{
           margin: `0 auto`,
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         <hr />
         © {new Date().getFullYear()}
         {` `}
-        <a href="https://www.patienceai.com">Patience AI</a>
+        <a href="https://www.meditateai.com">Meditate AI</a>
       </footer>
       </div>
     </>

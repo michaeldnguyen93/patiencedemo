@@ -23,11 +23,11 @@ const IndexPage = () => (
         <input type="password" name="password"></input>
       </label>
     </form>
-    <Link to="/page-2/">
+    <Link to="/dashboard/">
       <button style={{
           marginRight:30, 
-          background:"#415370",
-          color:"white",
+          background:"white",
+          color:"black",
           width:"80px"
         }}>
         Log On
@@ -42,11 +42,11 @@ const IndexPage = () => (
     <br />
     <br />
     <br />
-    <Link to="/page-2" style={{fontSize:14}}>
+    <Link to="/dashboard" style={{fontSize:14}}>
       Forgot Password?
     </Link>
     {' | '}
-    <Link to="/page-2" style={{fontSize:14}}>
+    <Link to="/dashboard" style={{fontSize:14}}>
       Register Account
     </Link>
     {/*<Link to="/page-2/">Go to page 2</Link>*/}
