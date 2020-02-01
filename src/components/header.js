@@ -6,7 +6,7 @@ import Image from "../components/image"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: '#415370',
+      background: 'white',
       marginBottom: `1.45rem`,
     }}
   >
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
     >
       <h1 style={{ margin: 0 }}>
         <div style={{maxWidth:'300px'}}>
-          <a href="https://www.patienceai.com">
+          <a href="https://www.meditateai.com">
             <Image />
           </a>
         </div>

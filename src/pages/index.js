@@ -8,10 +8,10 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Login" />
-    <h2>Patience AI Login</h2>
+    <h2>Meditate AI Login</h2>
     <form>
       <label style={{fontSize:14}}>
-        Username {"\n"}
+        Username or Email {"\n"}
         <br />
         <input type="text" name="username"></input>
       </label>
